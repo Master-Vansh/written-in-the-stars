@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Written in the Stars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HOME -->
+
+    <section id="home" class="home">
+
+        <div class="stars"></div>
+        <div class="glow"></div>
+
+        <div class="home-content">
+
+            <div class="small-title">
+                LEO × NOVA
+            </div>
+
+            <div class="star-symbol">✦</div>
+
+            <h1>
+                Written
+                <em>in the Stars</em>
+            </h1>
+
+            <p>
+                Two hearts, a little chaos, and a story written in the stars.
+            </p>
+
+            <button id="openStory">
+                OPEN THE STORY
+                <span>→</span>
+            </button>
+
+        </div>
+
+        <div class="bottom-text">
+            A STORY IN SEVEN CHAPTERS
+        </div>
+
+    </section>
+
+
+    <!-- READER -->
+
+    <section id="reader" class="reader hidden">
+
+        <header class="topbar">
+
+            <button id="homeButton" class="icon-button">
+                ←
+            </button>
+
+            <div class="top-title">
+                <span>WRITTEN IN THE STARS</span>
+                <small id="topChapter">CHAPTER I</small>
+            </div>
+
+            <button id="menuButton" class="icon-button">
+                ☰
+            </button>
+
+        </header>
+
+
+        <!-- CHAPTER TITLE -->
+
+        <div class="chapter-heading">
+
+            <div id="chapterNumber">
+                CHAPTER I
+            </div>
+
+            <h2 id="chapterTitle">
+                Where It All Began
+            </h2>
+
+        </div>
+
+
+        <!-- COMIC -->
+
+        <div class="comic-area">
+
+            <button
+                id="previousButton"
+                class="page-arrow left"
+            >
+                ‹
+            </button>
+
+            <div class="comic-container">
+
+                <div id="loader" class="loader">
+                    <div></div>
+                </div>
+
+                <img
+                    id="comicImage"
+                    alt="Comic page"
+                >
+
+            </div>
+
+            <button
+                id="nextButton"
+                class="page-arrow right"
+            >
+                ›
+            </button>
+
+        </div>
+
+
+        <!-- BOTTOM CONTROLS -->
+
+        <div class="controls">
+
+            <div class="page-progress">
+
+                <span id="currentPage">
+                    01
+                </span>
+
+                <div class="line">
+                    <div id="progress"></div>
+                </div>
+
+                <span id="totalPages">
+                    03
+                </span>
+
+            </div>
+
+            <div id="chapterDots"></div>
+
+        </div>
+
+
+        <!-- CHAPTER MENU -->
+
+        <div id="chapterMenu" class="menu hidden">
+
+            <div class="menu-panel">
+
+                <button
+                    id="closeMenu"
+                    class="close"
+                >
+                    ×
+                </button>
+
+                <div class="menu-label">
+                    THE STORY
+                </div>
+
+                <h3>
+                    Chapters
+                </h3>
+
+                <div id="chapterList"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHAPTER END -->
+
+        <div id="chapterEnd" class="chapter-end hidden">
+
+            <div class="end-decoration">
+                ✦
+            </div>
+
+            <div class="end-label">
+                CHAPTER COMPLETE
+            </div>
+
+            <h2 id="nextChapter">
+                Chapter II
+            </h2>
+
+            <p>
+                The story continues...
+            </p>
+
+            <button id="continueButton">
+
+                <span>
+                    CHAPTER II
+                </span>
+
+                <b>
+                    →
+                </b>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
