@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Written in the Stars — Leo × Nova</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HOME -->
+
+    <div id="homeScreen" class="home-screen">
+
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="home-content">
+
+            <div class="star">✦</div>
+
+            <div class="eyebrow">
+                LEO × NOVA
+            </div>
+
+            <h1>
+                Written
+                <span>in the Stars</span>
+            </h1>
+
+            <p>
+                Two hearts, a little chaos, and a story written in the stars.
+            </p>
+
+            <button id="openStoryBtn">
+                <span>Open the Story</span>
+                <b>→</b>
+            </button>
+
+        </div>
+
+        <div class="home-footer">
+            CHAPTER I AWAITS
+        </div>
+
+    </div>
+
+
+    <!-- READER -->
+
+    <div id="readerScreen" class="reader-screen hidden">
+
+        <header class="reader-header">
+
+            <button id="backHomeBtn" class="header-button">
+                ←
+            </button>
+
+            <div class="reader-title">
+                <span>WRITTEN IN THE STARS</span>
+                <small>LEO × NOVA</small>
+            </div>
+
+            <button id="chapterMenuBtn" class="header-button">
+                ☰
+            </button>
+
+        </header>
+
+
+        <!-- CHAPTER HEADING -->
+
+        <div class="chapter-info">
+
+            <span id="chapterNumber">
+                CHAPTER I
+            </span>
+
+            <h2 id="chapterTitle">
+                The Beginning
+            </h2>
+
+        </div>
+
+
+        <!-- COMIC -->
+
+        <main class="comic-area">
+
+            <button
+                id="previousPageBtn"
+                class="side-arrow left"
+            >
+                ‹
+            </button>
+
+            <div class="comic-frame">
+
+                <img
+                    id="comicImage"
+                    src=""
+                    alt="Comic page"
+                >
+
+                <div
+                    id="imageLoading"
+                    class="image-loading"
+                >
+                    <div></div>
+                </div>
+
+            </div>
+
+            <button
+                id="nextPageBtn"
+                class="side-arrow right"
+            >
+                ›
+            </button>
+
+        </main>
+
+
+        <!-- CONTROLS -->
+
+        <div class="reader-controls">
+
+            <div class="progress">
+
+                <span id="pageNumber">
+                    01
+                </span>
+
+                <div class="progress-line">
+                    <div id="progressBar"></div>
+                </div>
+
+                <span id="pageTotal">
+                    03
+                </span>
+
+            </div>
+
+            <div
+                class="chapter-dots"
+                id="chapterDots"
+            ></div>
+
+        </div>
+
+
+        <!-- CHAPTER MENU -->
+
+        <div
+            id="chapterMenu"
+            class="chapter-menu hidden"
+        >
+
+            <div class="menu-box">
+
+                <button
+                    id="closeMenuBtn"
+                    class="close-menu"
+                >
+                    ×
+                </button>
+
+                <p>THE STORY</p>
+
+                <h3>Chapters</h3>
+
+                <div id="chapterList"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHAPTER END -->
+
+        <div
+            id="chapterEnd"
+            class="chapter-end hidden"
+        >
+
+            <div class="end-content">
+
+                <span>✦</span>
+
+                <p>CHAPTER COMPLETE</p>
+
+                <h2 id="endChapterTitle">
+                    The Beginning
+                </h2>
+
+                <button id="continueBtn">
+                    Continue →
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
