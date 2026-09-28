@@ -1,15 +1,19 @@
 /* ==========================================
    WRITTEN IN THE STARS
    LEO × NOVA
+   20 CHAPTER EDITION
 ========================================== */
 
+
+/* ==========================================
+   CHAPTERS
+========================================== */
 
 const chapters = [
 
     {
         number: "I",
         title: "Where It All Began",
-
         images: [
             "images/chapter1/image1.jpg",
             "images/chapter1/image2.jpg",
@@ -20,7 +24,6 @@ const chapters = [
     {
         number: "II",
         title: "Somewhere Between Us",
-
         images: [
             "images/chapter2/image1.jpg",
             "images/chapter2/image2.jpg",
@@ -31,7 +34,6 @@ const chapters = [
     {
         number: "III",
         title: "The Little Things",
-
         images: [
             "images/chapter3/image1.jpg",
             "images/chapter3/image2.jpg",
@@ -42,7 +44,6 @@ const chapters = [
     {
         number: "IV",
         title: "A World of Our Own",
-
         images: [
             "images/chapter4/image1.jpg",
             "images/chapter4/image2.jpg",
@@ -53,7 +54,6 @@ const chapters = [
     {
         number: "V",
         title: "Through the Storm",
-
         images: [
             "images/chapter5/image1.jpg",
             "images/chapter5/image2.jpg",
@@ -64,7 +64,6 @@ const chapters = [
     {
         number: "VI",
         title: "Wherever We Go",
-
         images: [
             "images/chapter6/image1.jpg",
             "images/chapter6/image2.jpg",
@@ -74,23 +73,158 @@ const chapters = [
 
     {
         number: "VII",
-        title: "Written in the Stars",
-
+        title: "The Things We Never Said",
         images: [
             "images/chapter7/image1.jpg",
             "images/chapter7/image2.jpg",
             "images/chapter7/image3.jpg"
+        ]
+    },
+
+    {
+        number: "VIII",
+        title: "Under the Same Sky",
+        images: [
+            "images/chapter8/image1.jpg",
+            "images/chapter8/image2.jpg",
+            "images/chapter8/image3.jpg"
+        ]
+    },
+
+    {
+        number: "IX",
+        title: "A Thousand Little Moments",
+        images: [
+            "images/chapter9/image1.jpg",
+            "images/chapter9/image2.jpg",
+            "images/chapter9/image3.jpg"
+        ]
+    },
+
+    {
+        number: "X",
+        title: "Closer Than Before",
+        images: [
+            "images/chapter10/image1.jpg",
+            "images/chapter10/image2.jpg",
+            "images/chapter10/image3.jpg"
+        ]
+    },
+
+    {
+        number: "XI",
+        title: "The Days We Remember",
+        images: [
+            "images/chapter11/image1.jpg",
+            "images/chapter11/image2.jpg",
+            "images/chapter11/image3.jpg"
+        ]
+    },
+
+    {
+        number: "XII",
+        title: "A Place Only We Know",
+        images: [
+            "images/chapter12/image1.jpg",
+            "images/chapter12/image2.jpg",
+            "images/chapter12/image3.jpg"
+        ]
+    },
+
+    {
+        number: "XIII",
+        title: "When Everything Changed",
+        images: [
+            "images/chapter13/image1.jpg",
+            "images/chapter13/image2.jpg",
+            "images/chapter13/image3.jpg"
+        ]
+    },
+
+    {
+        number: "XIV",
+        title: "Still Choosing You",
+        images: [
+            "images/chapter14/image1.jpg",
+            "images/chapter14/image2.jpg",
+            "images/chapter14/image3.jpg"
+        ]
+    },
+
+    {
+        number: "XV",
+        title: "Beyond the Distance",
+        images: [
+            "images/chapter15/image1.jpg",
+            "images/chapter15/image2.jpg",
+            "images/chapter15/image3.jpg"
+        ]
+    },
+
+    {
+        number: "XVI",
+        title: "The Road Ahead",
+        images: [
+            "images/chapter16/image1.jpg",
+            "images/chapter16/image2.jpg",
+            "images/chapter16/image3.jpg"
+        ]
+    },
+
+    {
+        number: "XVII",
+        title: "Our Favorite Chapter",
+        images: [
+            "images/chapter17/image1.jpg",
+            "images/chapter17/image2.jpg",
+            "images/chapter17/image3.jpg"
+        ]
+    },
+
+    {
+        number: "XVIII",
+        title: "If We Could Pause Time",
+        images: [
+            "images/chapter18/image1.jpg",
+            "images/chapter18/image2.jpg",
+            "images/chapter18/image3.jpg"
+        ]
+    },
+
+    {
+        number: "XIX",
+        title: "Until the Stars Fade",
+        images: [
+            "images/chapter19/image1.jpg",
+            "images/chapter19/image2.jpg",
+            "images/chapter19/image3.jpg"
+        ]
+    },
+
+    {
+        number: "XX",
+        title: "Written in the Stars",
+        images: [
+            "images/chapter20/image1.jpg",
+            "images/chapter20/image2.jpg",
+            "images/chapter20/image3.jpg"
         ]
     }
 
 ];
 
 
+/* ==========================================
+   STATE
+========================================== */
+
 let chapter = 0;
 let page = 0;
 
 
-/* ELEMENTS */
+/* ==========================================
+   ELEMENTS
+========================================== */
 
 const home =
     document.getElementById("home");
@@ -159,7 +293,9 @@ const continueButton =
     document.getElementById("continueButton");
 
 
-/* OPEN */
+/* ==========================================
+   OPEN STORY
+========================================== */
 
 openStory.onclick = function () {
 
@@ -177,7 +313,9 @@ openStory.onclick = function () {
 };
 
 
-/* HOME */
+/* ==========================================
+   HOME BUTTON
+========================================== */
 
 homeButton.onclick = function () {
 
@@ -192,7 +330,9 @@ homeButton.onclick = function () {
 };
 
 
-/* MENU */
+/* ==========================================
+   MENU
+========================================== */
 
 menuButton.onclick = function () {
 
@@ -202,22 +342,28 @@ menuButton.onclick = function () {
 
 };
 
+
 closeMenu.onclick = function () {
 
     menu.classList.add("hidden");
 
 };
 
-menu.onclick = function (e) {
 
-    if (e.target === menu) {
+menu.onclick = function (event) {
+
+    if (event.target === menu) {
+
         menu.classList.add("hidden");
+
     }
 
 };
 
 
-/* RENDER */
+/* ==========================================
+   RENDER CHAPTER
+========================================== */
 
 function render() {
 
@@ -240,7 +386,9 @@ function render() {
 }
 
 
-/* LOAD IMAGE */
+/* ==========================================
+   LOAD IMAGE
+========================================== */
 
 function loadImage() {
 
@@ -283,7 +431,9 @@ function loadImage() {
 }
 
 
-/* CONTROLS */
+/* ==========================================
+   UPDATE CONTROLS
+========================================== */
 
 function updateControls() {
 
@@ -308,7 +458,9 @@ function updateControls() {
 }
 
 
-/* NEXT */
+/* ==========================================
+   NEXT PAGE
+========================================== */
 
 function nextPage() {
 
@@ -333,11 +485,15 @@ function nextPage() {
 }
 
 
-/* PREVIOUS */
+/* ==========================================
+   PREVIOUS PAGE
+========================================== */
 
 function previousPage() {
 
-    if (!chapterEnd.classList.contains("hidden")) {
+    if (
+        !chapterEnd.classList.contains("hidden")
+    ) {
 
         chapterEnd.classList.add("hidden");
 
@@ -356,7 +512,9 @@ function previousPage() {
 }
 
 
-/* PAGE CHANGE */
+/* ==========================================
+   PAGE CHANGE ANIMATION
+========================================== */
 
 function changePage(direction) {
 
@@ -379,7 +537,9 @@ function changePage(direction) {
 }
 
 
-/* BUTTONS */
+/* ==========================================
+   BUTTONS
+========================================== */
 
 nextButton.onclick =
     nextPage;
@@ -388,7 +548,9 @@ previousButton.onclick =
     previousPage;
 
 
-/* CLICK IMAGE */
+/* ==========================================
+   CLICK IMAGE
+========================================== */
 
 comicImage.onclick =
     nextPage;
@@ -402,6 +564,9 @@ function showChapterEnd() {
 
     const last =
         chapter === chapters.length - 1;
+
+
+    /* LAST CHAPTER */
 
     if (last) {
 
@@ -420,6 +585,7 @@ function showChapterEnd() {
             function () {
 
                 chapter = 0;
+
                 page = 0;
 
                 chapterEnd.classList.add("hidden");
@@ -428,7 +594,13 @@ function showChapterEnd() {
 
             };
 
-    } else {
+
+    }
+
+
+    /* NORMAL CHAPTER */
+
+    else {
 
         const next =
             chapters[chapter + 1];
@@ -465,7 +637,7 @@ function showChapterEnd() {
 
 
 /* ==========================================
-   DOTS
+   CHAPTER DOTS
 ========================================== */
 
 function createDots() {
@@ -481,19 +653,23 @@ function createDots() {
             "chapter-dot";
 
         if (index === chapter) {
+
             dot.classList.add("active");
+
         }
 
-        dot.onclick = function () {
+        dot.onclick =
+            function () {
 
-            chapter = index;
-            page = 0;
+                chapter = index;
 
-            chapterEnd.classList.add("hidden");
+                page = 0;
 
-            render();
+                chapterEnd.classList.add("hidden");
 
-        };
+                render();
+
+            };
 
         chapterDots.appendChild(dot);
 
@@ -519,7 +695,9 @@ function createChapterMenu() {
             "chapter-choice";
 
         if (index === chapter) {
+
             button.classList.add("active");
+
         }
 
         button.innerHTML = `
@@ -527,18 +705,20 @@ function createChapterMenu() {
             <span>${item.title}</span>
         `;
 
-        button.onclick = function () {
+        button.onclick =
+            function () {
 
-            chapter = index;
-            page = 0;
+                chapter = index;
 
-            menu.classList.add("hidden");
+                page = 0;
 
-            chapterEnd.classList.add("hidden");
+                menu.classList.add("hidden");
 
-            render();
+                chapterEnd.classList.add("hidden");
 
-        };
+                render();
+
+            };
 
         chapterList.appendChild(button);
 
@@ -555,8 +735,12 @@ document.addEventListener(
     "keydown",
     function (event) {
 
-        if (reader.classList.contains("hidden")) {
+        if (
+            reader.classList.contains("hidden")
+        ) {
+
             return;
+
         }
 
         if (
@@ -570,13 +754,17 @@ document.addEventListener(
 
         }
 
-        if (event.key === "ArrowLeft") {
+        if (
+            event.key === "ArrowLeft"
+        ) {
 
             previousPage();
 
         }
 
-        if (event.key === "Escape") {
+        if (
+            event.key === "Escape"
+        ) {
 
             menu.classList.add("hidden");
 
@@ -588,7 +776,10 @@ document.addEventListener(
 );
 
 
-/* START */
+/* ==========================================
+   START
+========================================== */
 
 createDots();
+
 updateControls();
