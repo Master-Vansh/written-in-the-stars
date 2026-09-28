@@ -671,6 +671,9 @@ button {
         1px solid rgba(255,255,255,.08);
 
     animation: menuOpen .3s ease;
+
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 @keyframes menuOpen {
